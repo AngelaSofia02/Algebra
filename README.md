@@ -11,3 +11,4 @@ Este repositorio contiene un ejemplo práctico en Python utilizando la bibliotec
 1. Instalar las bibliotecas necesarias:
    ```bash
    pip install matplotlib numpy
+python ejemplo_matriz_matplotlib.py
