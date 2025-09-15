@@ -1,24 +1,13 @@
-import matplotlib.pyplot as plt
-import numpy as np
+# Algebra - Ejemplo con Matplotlib
 
-matriz = np.arange(1, 26).reshape(5, 5)
+Este repositorio contiene un ejemplo práctico en Python utilizando la biblioteca **Matplotlib** para visualizar **matrices** de diferentes maneras.
 
-print("Matriz:")
-print(matriz)
+## 📌 Contenido
+- Creación de una matriz con `numpy.arange` y `reshape`
+- Visualización de la matriz como un **mapa de calor** (`imshow`)
+- Representación de las **filas de la matriz como curvas**
 
-plt.imshow(matriz, cmap='viridis', interpolation='nearest')
-plt.colorbar(label="Valor de la celda")
-plt.title("Visualización de una matriz con Matplotlib")
-plt.xlabel("Columnas")
-plt.ylabel("Filas")
-plt.show()
-
-for i in range(matriz.shape[0]):
-    plt.plot(matriz[i], label=f"Fila {i+1}")
-
-plt.title("Filas de la matriz representadas como curvas")
-plt.xlabel("Índice de columna")
-plt.ylabel("Valor")
-plt.legend()
-plt.show()
-
+## ▶️ Ejecución
+1. Instalar las bibliotecas necesarias:
+   ```bash
+   pip install matplotlib numpy
